@@ -6,8 +6,8 @@
     <title>Arctic Tent Studios</title>
     <style> 
     body{
-        background: rgb(58, 58, 58);
-        color: white;
+        background: rgb(209, 209, 209);
+        color: rgb(46, 46, 46);
         font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
         margin: 0;
         padding: 0;
@@ -17,6 +17,10 @@
         background: rgb(34, 34, 34);
         padding: 0;
         margin: 0;
+        width: 100%;
+        height: 68px;
+        position: fixed;
+        top: 0;
     }
 
     
@@ -57,19 +61,34 @@
     nav {
         margin: 0;
         padding: 0px;
-        outline: 5px groove rgb(128, 128, 128);
+        outline: 3px solid rgb(77, 77, 77);
     }
 
-    header h1 {
-        font-size: medium;
-        color: rgb(206, 206, 206);
-        background-color: rgb(81, 81, 81);
-        margin-top: 0px;
-        padding-top: 10px;
-        margin: 0px 0px 0px 0px;
-        padding: 10px 20px 7px 20px;
-
+    h4{
+        padding: 10px 10px 10px 15px;
+        margin: 0;
+        text-align:left;
     }
+
+    .info {
+        margin: 0px 0px 0px 15px;
+    }
+
+    main {
+        min-height: calc(100vh - 68px - 30px);
+    }
+
+    footer {
+        background-color: rgb(177, 177, 177);
+        width: 100%;
+        height: 30px;
+        margin-top: 50px;
+    }
+
+    .space {
+        padding-top: 68px;
+    }
+
 
 
     @media screen and (max-width: 375px) {
@@ -90,28 +109,54 @@
                 <li class="normalNav"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <h1>
-            Arctic Tent Studios
-        </h1>
     </header>
 
-    <section>
+    <section class="space">
         
     </section>
-    <section class="triple-display middle-section">
-        <div>a</div>
+
+    <section class="info">
+        <h4>    
+            News:
+        </h4>
+        <div class="info-item">a</div>
         <div>b</div>
         <div>c</div>
     </section>
-
-    <section>
-        lower-section
+    <section class="info">
+        <h4>    
+            Rest:
+        </h4>
+        <div>lots</div>
+        <div>lots</div>
+        <div>lots</div>
+        <div>lots</div>
+        <div>lots</div>
+        <div>lots</div>
+        <div>lots</div>
+        <div>lots</div>
+        <div>lots</div>
+        
+        <div>lots</div>
+        <div>lots</div>
+        <div>lots</div>
+        <div>lots</div>
+        <div>lots</div>
+        <div>lots</div>
+        <div>lots</div>
+        <div>lots</div>
+        <div>lots</div>
+        <div>lots</div>
+        <div>lots</div>
+        <div>lots</div>
+        <div>lots</div>
+        <div>lots</div>
+        <div>lots</div>
+        <div>lots</div>
     </section>
 
     <footer>
-        
+        lower-section
     </footer>
-
-    <footer></footer>
 </body>
 </html>
