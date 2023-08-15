@@ -30,6 +30,7 @@
             padding: 0;
             list-style-type: none;
             display: flex;
+            text-align: center;
         }
 
     header .navigationArctic a {
@@ -109,15 +110,32 @@
         }
         
         .logo {
-            display: none;
+            width: 30px;
+            height: 20px;
+            margin-left:-50px;
+            margin-right: 50px;
         }
         
     }
 
-    @media screen and (max-width: 309px) {
-       
+    @media screen and (max-width: 340px) {
+        .navigationArctic {
+            margin-left: 30px;
+        }
 
        .normalNav 
+       {
+           font-size: medium;
+       }
+       
+       .logo {
+            display: none;
+        }
+       
+   }
+
+   @media screen and (max-width: 288px) {
+        .normalNav 
        {
            font-size: small;
        }
