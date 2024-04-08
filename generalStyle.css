@@ -37,7 +37,6 @@
         }
 
         section div {
-            background-color: lightgoldenrodyellow;
             padding: 5px 20px;
             margin: 10px 15px;
         }
@@ -48,11 +47,9 @@
             font-size: 130%;
         }
 
-        div {
-            background: rgb(229, 229, 229);
-            margin: auto;
-            width: 100px;
-            height: 30px;
+        .normal-text {
+            margin: 10px 15px 10px 15px;
+            color: rgb(24, 24, 24);
         }
 
         ul {
@@ -75,7 +72,10 @@
        footer {
             background: darkslategray;
             padding: 5px;
-            margin: 1px 15px;
+            width: 100%;
+            bottom: 0;
+            flex: 1;
+            min-height: 200px;
         }
 
         .navigation {
