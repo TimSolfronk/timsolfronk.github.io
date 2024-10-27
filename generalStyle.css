@@ -171,3 +171,11 @@
                 padding: 2px;
             }
         }
+        
+        @media screen and (max-width: 499x) {
+
+            .nav-page {  
+                font-size:13px;
+                padding: 2px;
+            }
+        }
