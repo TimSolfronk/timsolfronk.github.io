@@ -3,15 +3,18 @@
         body{
             background: rgb(243, 243, 243);
             color: white;
-            font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
             margin: 0;
             padding: 0;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
 
         header{
             background: rgb(233, 233, 233);
-            margin: 10px 20px; /*10 up and down 20 left and right*/
-            padding: 20px 5% 20px 5%;
+            background: darkslategray;
+            margin: 0 auto 30px auto; /*10 up and down 20 left and right*/
+            padding: 15px 5vw 15px 5vw;
+            border-bottom: 2px solid grey;
+            box-shadow: 0 0 10px grey;
         }
         section {
             background-color: grey;
@@ -47,11 +50,6 @@
             font-size: 130%;
         }
 
-        .normal-text {
-            margin: 10px 15px 10px 15px;
-            color: rgb(24, 24, 24);
-        }
-
         ul {
             margin: 0;
             padding: 0;
@@ -61,12 +59,22 @@
         li{
             display: inline-flex;
             flex-direction: row;
-            justify-content: right;
-            padding: 0 10px;
+            padding: 0 5px;
+            margin: auto;
         }
 
         .nav-li:hover {
             outline: rgb(87, 87, 87) 2px solid;
+        }
+
+        .list-left {
+            padding: 100px;
+            float:left;
+        }
+
+        .list-right {
+            padding: 100px;
+            float:right;
         }
 
        footer {
@@ -79,11 +87,21 @@
         }
 
         .navigation {
-            background-color: rgb(207, 203, 203);
-            font-size: 150%;
-            border-radius: 2px;
+            
             margin: 0;
             padding: 10px;
+        }
+
+
+        .nav-bar {
+            background-color: rgb(207, 203, 203);
+            background: rgb(215, 215, 215);
+            box-shadow: 0px 0px 4px rgb(34, 34, 34); 
+            font-size: 150%;
+            border-radius: 4px;
+            width: 90vw;
+            height: 15%;
+            min-height: 60px;
         }
 
         a {
@@ -96,6 +114,8 @@
 
         ul.navigation li:hover {
             background-color: rgb(164, 164, 164);
+            border-radius: 2px;
+            box-shadow: 0px 2px 2px grey;            
         }
 
         .big-header {
@@ -114,4 +134,40 @@
             justify-content: flex-end;
             margin-left: 60px;
             margin-right: 0;
+        }
+
+        .section-header {
+            background-color: rgb(233, 233, 233);
+            background-color: rgb(164, 174, 184);
+            padding: 2vh 0 2vh 3vw;
+            font-size: 25px;
+            font-weight: bold;
+            color: rgb(51, 51, 51);
+            box-shadow: 0px 1px 2px grey;
+        }
+
+        .section-text {
+            margin: 20px 20vw 15vh 20vw;
+            border-top: 1px solid rgb(122, 122, 122);
+            border-bottom: 1px solid rgb(122, 122, 122);
+            box-shadow: 0px 0px 2px grey;
+        }
+
+        .normal-text {
+            margin: 0px -5vw;
+            padding: 15px 0 40px 0;
+            color: rgb(24, 24, 24);
+            background: rgb(243, 243, 243);
+        }
+
+        .current-nav{
+            color:rgb(91, 91, 91);
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .nav-page {  
+                font-size:17.5px;
+                padding: 2px;
+            }
         }
