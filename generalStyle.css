@@ -172,10 +172,10 @@
             }
         }
         
-        @media screen and (max-width: 499x) {
+        @media screen and (max-width: 550px) {
 
             .nav-page {  
-                font-size:13px;
-                padding: 2px;
+                font-size:15px;
+                padding: 1px;
             }
         }
