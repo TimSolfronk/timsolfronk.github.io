@@ -146,6 +146,7 @@
         }
 
         .section-header-text {
+            filter:opacity(0.2);
             transform: translateX(-20%);
             -webkit-transform: translateX(-20%);
             animation: slide-in 0.75s forwards;
