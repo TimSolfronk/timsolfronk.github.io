@@ -50,13 +50,11 @@
             font-size: 130%;
         }
 
-        ul {
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
+        b {
+            font-weight: bold;
         }
 
-        li{
+        .nav-li{
             display: inline-flex;
             flex-direction: row;
             padding: 0 5px;
@@ -84,24 +82,26 @@
             bottom: 0;
             flex: 1;
             min-height: 200px;
+            border-top: 2px solid grey;
+            box-shadow: 0 0 10px grey;
         }
 
         .navigation {
-            
             margin: 0;
+            list-style-type: none;
             padding: 10px;
         }
 
 
         .nav-bar {
-            background-color: rgb(207, 203, 203);
-            background: rgb(215, 215, 215);
+            background: rgb(226, 226, 226);
             box-shadow: 0px 0px 4px rgb(34, 34, 34); 
             font-size: 150%;
             border-radius: 4px;
             width: 90vw;
             height: 15%;
             min-height: 60px;
+            outline: rgb(41, 41, 41) solid 3px;
         }
 
         a {
@@ -120,7 +120,7 @@
 
         .big-header {
             color: black;
-            padding: 0 0 0 30px;
+            text-align: center;
         }
 
         .nav-page {
@@ -137,13 +137,21 @@
         }
 
         .section-header {
-            background-color: rgb(233, 233, 233);
             background-color: rgb(164, 174, 184);
-            padding: 2vh 0 2vh 3vw;
+            padding: 2vh 0 2vh 5vw;
             font-size: 25px;
             font-weight: bold;
             color: rgb(51, 51, 51);
             box-shadow: 0px 1px 2px grey;
+        }
+
+        .section-header-text {
+            transform: translateX(-20%);
+            -webkit-transform: translateX(-20%);
+            animation: slide-in 0.75s forwards;
+            -webkit-animation: slide-in 0.75s forwards;
+            animation-delay: 0s;
+
         }
 
         .section-text {
@@ -164,6 +172,27 @@
             color:rgb(91, 91, 91);
         }
 
+        .footer-list {
+            text-align: center;
+            padding: 90px 10vw 0 10vw;
+        }
+
+        .footer-list-ele {
+            color: aliceblue;
+            padding: 7px 5px 7px 5px;
+            margin: 0 2vw;
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+        ul.footer-list li:hover {
+            background: rgb(226, 226, 226);   
+        }
+
+        ul.footer-list li:hover a {
+            color:black; 
+        }
+
         @media screen and (max-width: 600px) {
 
             .nav-page {  
@@ -178,4 +207,15 @@
                 font-size:13px;
                 padding: 0px;
             }
+        }
+
+        @keyframes slide-in {
+            100% {  
+                transform: translateX(0%);
+                filter:opacity(1); 
+                }
+        }
+        
+        @-webkit-keyframes slide-in {
+            100% { -webkit-transform: translateX(0%); }
         }
